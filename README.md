@@ -3,7 +3,9 @@
 If you want to use the turtlebot 2 with d435i camera, it is necessary to modify the following ROS packages:
 
   -turtlebot_description
+  
   -turtlebot_bringup
+  
   -turtlebot_navigation
 
 In these packages, additional files for the RealSense d435i model have been included. 
