@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+    - Base      : kobuki
+    - Stacks    : hexagons
+    - 3d Sensor : d435i
+-->    
+<robot name="turtlebot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_common_library.urdf.xacro" />
+  <xacro:include filename="$(find kobuki_description)/urdf/kobuki.urdf.xacro" />
+  <xacro:include filename="$(find turtlebot_description)/urdf/stacks/hexagons.urdf.xacro"/>
+  
+  <xacro:include filename="$(find turtlebot_description)/urdf/sensors/d435i.urdf.xacro"/>
+  
+
+ <!-- 
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435i.urdf.xacro"/>
+ 
+  <xacro:sensor_d435i parent="base_link" name="d435i_camera">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:sensor_d435i>
+  -->
+
+  <kobuki/>
+  <stack_hexagons parent="base_link"/>
+  <sensor_d435i  parent="base_link"/>
+</robot>
