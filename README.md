@@ -8,5 +8,5 @@ In order to do navigation tasks with turtlebot 2 and d435i camera, it is necessa
   
   -turtlebot_navigation
 
-In these packages, additional files for the RealSense d435i model have been included. 
+These packages contains additional files for the RealSense d435i model. 
 In addition, the "3dsensor.launch" file has been modified so that the depth image can be correctly converted into a laser using the depthimage_to_laserscan package.
